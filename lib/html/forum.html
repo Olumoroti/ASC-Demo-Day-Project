@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="EN">
+<head>
+  <meta charset="UTF-8">
+  <title>C0²X Forum</title>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDLJQd56WewjX9Zwio7-DthE87jyslbN5U",
+        authDomain: "fir-day-project.firebaseapp.com",
+        databaseURL: "https://fir-day-project.firebaseio.com",
+        projectId: "fir-day-project",
+        storageBucket: "",
+        messagingSenderId: "568123296159",
+        appId: "1:568123296159:web:e75c8de352b4ff5d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    
+    <script src="../js/forum.js" defer></script>
+    <link rel="stylesheet" href="../css/forum.css" defer>
+
+</head>
+
+<body>
+
+    <div id="cover_container"> 
+        <div id="logo_container">
+            <img src="../../assets/newLogo.png">
+            <h1>CO²X Forum Maker</h1>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <!-- <a><p>Intro</p></a>
+        <a><p>Causes</p></a>
+        <a><p>Effects</p></a>
+        <a><p>What We Can Do</p></a>
+        <a><p>What You Can Do</p></a> -->
+        <a href = "../../index.html"><p>Back Home</p></a>
+    </div>
+
+    <p id="main_title">Tell your story.</p>
+
+    <div class="form_container">
+            <form>
+                <div class="input_container">
+                    <div class="single_input">
+                        <label for="name">Your Name:</label>
+                        <textarea id="name" type="text"></textarea>
+                    </div>
+                    <div class="single_input">
+                        <label for="email">Email:</label>
+                        <textarea id="email" type="email"></textarea>
+                    </div>
+                    <div class="single_input">
+                            <label for="comment">Comments:</label>
+                            <textarea id="comment" type="comment"></textarea>
+                    </div>
+                    <p><strong>This is a:</strong></p>
+                    <div class = "radio_container">
+                        <div class = "single_radio_input">
+                            <label for="radio_comment">Comment</label>
+                            <input type="radio" id="radio_comment" name="sort" value="comment" onclick="updateTypeRadio(this.value)">
+                        </div>
+
+                        <div class = "single_radio_input">
+                            <label for="radio_question">Question</label>
+                            <input type="radio" id="radio_question" name="sort" value="question" onclick="updateTypeRadio(this.value)">
+                        </div>
+
+                        <div class = "single_radio_input">
+                            <label for="radio_statement">Other</label>
+                            <input type="radio" id="radio_statement" name="sort" value="statement" onclick="updateTypeRadio(this.value)">
+                        </div>
+                        <textarea id="radio_result" type="text"></textarea>
+                    </div>
+                    
+                </div>
+            </form>
+
+            <form id = "forum_submit">
+                <button id="submit_button">Submit</button>
+             </form> 
+
+        </div>
+
+    <div id = "forum_container">
+
+        <form id = "forum_filter">
+            <p>Filter By:</p>
+            <div id = "forum_buttons">
+                <button id="selector_all" onclick="filterContent(this.id)">All</button>
+                <button id="selector_comment" onclick="filterContent(this.id)">Comments</button>
+                <button id="selector_question" onclick="filterContent(this.id)">Questions</button>
+                <button id="selector_statement" onclick="filterContent(this.id)">Statement</button>
+            </div>
+
+        </form>
+    </div>
+
+    
+</body>
+</html>
+

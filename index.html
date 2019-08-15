@@ -7,6 +7,30 @@
 
   <link rel="stylesheet" href="./lib/css/style.css">
   <script src="./lib/js/main.js" defer></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDLJQd56WewjX9Zwio7-DthE87jyslbN5U",
+        authDomain: "fir-day-project.firebaseapp.com",
+        databaseURL: "https://fir-day-project.firebaseio.com",
+        projectId: "fir-day-project",
+        storageBucket: "",
+        messagingSenderId: "568123296159",
+        appId: "1:568123296159:web:e75c8de352b4ff5d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+
 </head>
 
 <body>
@@ -24,7 +48,7 @@
         <a><p>Effects</p></a>
         <a><p>What We Can Do</p></a>
         <a><p>What You Can Do</p></a>
-        <a><p>Forum</p></a>
+        <a href="lib/html/forum.html"><p>Forum</p></a>
     </div>
 
     <div id = "main_header">
@@ -32,6 +56,9 @@
         <p id="main_subtitle">We want to change that.</p>
     </div>
 
+    <div id = "intro_container" class = "one_content">
+        <p>What is Climate Change?</p>
+    </div>
 
 </body>
 </html>
