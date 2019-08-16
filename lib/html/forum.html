@@ -30,6 +30,7 @@
     
     <script src="../js/forum.js" defer></script>
     <link rel="stylesheet" href="../css/forum.css" defer>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 
 </head>
 
@@ -81,7 +82,7 @@
                         </div>
 
                         <div class = "single_radio_input">
-                            <label for="radio_statement">Other</label>
+                            <label for="radio_statement">Statement</label>
                             <input type="radio" id="radio_statement" name="sort" value="statement" onclick="updateTypeRadio(this.value)">
                         </div>
                         <textarea id="radio_result" type="text"></textarea>
@@ -104,7 +105,7 @@
                 <button id="selector_all" onclick="filterContent(this.id)">All</button>
                 <button id="selector_comment" onclick="filterContent(this.id)">Comments</button>
                 <button id="selector_question" onclick="filterContent(this.id)">Questions</button>
-                <button id="selector_statement" onclick="filterContent(this.id)">Statement</button>
+                <button id="selector_statement" onclick="filterContent(this.id)">Statements</button>
             </div>
 
         </form>

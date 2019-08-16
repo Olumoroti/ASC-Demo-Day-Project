@@ -1,9 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
-    background-color: #003758;
+    /* background-color: #003758; */
+    background-image: linear-gradient(to right top, #0329b2, #133ac0, #204bcd, #2c5bda, #386be7, #3969de, #3967d6, #3a65cd, #2e52ad, #22408f, #142e72, #051e56);
+    /* background-image: linear-gradient(to right top, #003758, #212741, #221a2a, #190f16, #000000); */
     width: 100%;
     font-size: 2rem;
-    font-family: Roboto, sans-serif;
+    /* font-family: Roboto, sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
     color: white;
 }
 
@@ -24,8 +32,8 @@ body {
 #logo_container {
     display: flex;
     flex-flow: row nowrap;
-    width: 25vw;
-    height: 25%;
+    /* width: 25vw; */
+    height: 30%;
     color: white;
     align-items: center;
     margin-top: 0.5rem;
@@ -43,7 +51,7 @@ body {
     }
 
     #logo_container h1 {
-        margin: 0;
+        margin: 0 3rem 0 0;
         justify-self: flex-end;
         font-size: 2.5rem;
         
@@ -57,7 +65,8 @@ body {
     position: sticky;
     top: 0;
     /* height: 5rem; */
-    background-color:#132B28;
+    /* background-color:#132B28; */
+    background-image: linear-gradient(to right top, #0a9100, #1a8b18, #258425, #2c7e2e, #337735, #327234, #316d34, #306833, #28642b, #1f5f23, #145b1b, #055612);
     color:white;
     justify-content: space-between;
     /* align-items: center; */
@@ -81,6 +90,7 @@ body {
         transition: 0.3s;
         color: white;
         text-decoration: none;
+        scroll-behavior: smooth;
     }
 
 
@@ -100,7 +110,7 @@ body {
 #main_header {
     display: flex;
     flex-flow: column nowrap;
-    height: 1000px;
+    /* height: 1000px; */
 }
 
 #main_title {
@@ -113,4 +123,34 @@ body {
 #main_subtitle {
     font-size: 1.5rem;
     text-align: center;
+}
+
+.content_container {
+    padding-top: 7rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.sub_header {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 3rem;
+}
+
+.sub_content {
+    font-size: 1.8rem;
+    color: rgb(230, 230, 230);
+    margin-bottom: 3rem;
+    line-height: 200%;
+}
+
+#end_content {
+    width: 50%;
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin:auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }

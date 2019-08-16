@@ -1,9 +1,12 @@
 body {
     margin: 0;
-    background-color: #003758;
+    /* background-color: #003758; */
+    /* background-image: linear-gradient(to right top, #003758, #212741, #221a2a, #190f16, #000000); */
+    background-image: linear-gradient(to right top, #170091, #002a98, #003d95, #004b8c, #00577f, #005579, #005274, #00506e, #00416e, #00316b, #001f64, #060556);
     width: 100%;
     font-size: 2rem;
-    font-family: Roboto, sans-serif;
+    /* font-family: Roboto, sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
     color:white;
 }
 
@@ -53,7 +56,8 @@ body {
     flex-flow: row nowrap;
     width: 100%;
     /* height: 5rem; */
-    background-color:#132B28;
+    /* background-color:#132B28; */
+    background-image: linear-gradient(to left bottom, #055717, #05681c, #067920, #078b25, #099d29);
     color:white;
     position: sticky;
     top: 0;

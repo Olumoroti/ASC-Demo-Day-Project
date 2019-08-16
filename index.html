@@ -30,9 +30,8 @@
     firebase.initializeApp(firebaseConfig);
     </script>
 
-
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <div id="cover_container"> 
@@ -42,24 +41,97 @@
         </div>
     </div>
 
+
+
     <div id="navbar">
-        <a><p>Intro</p></a>
-        <a><p>Causes</p></a>
-        <a><p>Effects</p></a>
-        <a><p>What We Can Do</p></a>
-        <a><p>What You Can Do</p></a>
+        <a href = "#intro_container"><p>Intro</p></a>
+        <a href = "#causes_container"><p>Causes</p></a>
+        <a href = "#effects_container"><p>Effects</p></a>
+        <a href = "#globe_container"><p>What We Can Do</p></a>
+        <a href = "#person_container"><p>What You Can Do</p></a>
         <a href="lib/html/forum.html"><p>Forum</p></a>
     </div>
+
+
 
     <div id = "main_header">
         <p id="main_title">Climate Change is a BIG issue.</p>
         <p id="main_subtitle">We want to change that.</p>
     </div>
 
-    <div id = "intro_container" class = "one_content">
-        <p>What is Climate Change?</p>
+    <div id = "intro_container" class="content_container">
+        <p class = "sub_header">What is Climate Change?</p>
+        <p class = "sub_content">
+            Climate change refers to a broad range of global phenomena created predominantly by the recent warming of Earth’s surface (or global warming).
+        </p>
+        <p class = "sub_content">
+            Note: While global warming and climate change are used interchangeably, global warming mostly refers only to the gradual warming of the Earth, while climate change encompasses both global warming and their effects.
+        </p>
     </div>
 
+    <div id = "causes_container" class="content_container">
+            <p class = "sub_header">Causes of Climate Change</p>
+            <p class = "sub_content">
+                Naturally, the Earth’s climate changes due to multiple factors, including:
+            </p>
+            <ul class = "sub_content">
+                <li>the Earth's orbit,</li>
+                <li>the Earth's tilt,</li>
+                <li>and the intensity of solar rays,</li>
+            </ul>
+            <p class = "sub_content">
+                Natural events on Earth, such as volcanic eruptions, also affects Earth’s temperature.
+            </p>
+            <p class = "sub_content">
+                Normally, the Earth’s atmosphere traps some of the Sun’s heat, creating a habitable surface. This is called the greenhouse effect. 
+            </p>
+            <p class = "sub_content">
+                Greenhouse gases, such as carbon dioxide, methane, wapor vapor, ozone, etc, make up the atmosphere and help trap the Sun’s energy. 
+            </p>
+            <p class = "sub_content">
+                Human activities, mostly the burning of fossil fuels (oil, coal, natural gas), but also agriculture and land clearing, has led to increasing concentrations of these greenhouse gases, leading to more of the Sun’s energy being trapped in the atmosphere, warming the Earth.  
+            </p>
+
+        </div>
+
+        <div id = "effects_container" class="content_container">
+            <p class ="sub_header">Effects of Climate Change</p>
+            <ul class = "sub_content">
+                <li>Increased sea levels and flooding</li>
+                <li>Extreme weather conditions</li>
+                <li>Destruction of ecosystems</li>
+                <li>Change in behavior in animals and plants (marine and terrestrial)</li>
+                <li>Frequent and deadly natural disasters</li>
+                <li>Melting ice (especially in Arctic, polar and glacier regions)</li>
+            </ul>     
+        </div>
+
+        <div id = "globe_container" class="content_container">
+            <p class ="sub_header">What Can The World Do?</p>
+            <ul class = "sub_content">
+                <li>Develop and utilize technology that are fueled by renewable energy sources, such as wind or solar power.</li>
+                <li>Pass laws and regulations that place our home's (the Earth) health first, and taking steps to make a cleaner atmosphere.</li>
+                <li>Take a stand against companies and sectors that heavily contribute to climate change.</li>
+            </ul>     
+        </div>
+
+        <div id = "person_container" class="content_container">
+                <p class ="sub_header">What Can YOU Do?</p>
+                <ul class = "sub_content">
+                    <li>
+                        Encourage lawmakers to pass laws for a cleaner Earth, and rally against companies that negatively impact our climate.
+                    </li>
+                    <li>
+                        Reduce your use of fossil fuels and gas, and instead use cleaner, renewable-energy fueled appliances and technologies.
+                    </li>
+                    <li>
+                        Inform anyone you know about the danger of climate change, and what they can to do combat the threat. The more people that fight against climate change, the cleaner the Earth can become.
+                    </li>
+                </ul>     
+            </div>
+
+    <p id = "end_content">Together, we can make the Earth a cleaner place.</p>
+        
 </body>
 </html>
 
